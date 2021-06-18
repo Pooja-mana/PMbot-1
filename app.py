@@ -569,8 +569,8 @@ def webhook():
 
 # run the app
 if __name__ == '__main__':
-   port = process.env.PORT or 8080;
-   app.run(host='0.0.0.0', port)
+   portt = process.env.PORT or 8080
+   app.run(host='0.0.0.0', portt)
    
 
 
