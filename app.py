@@ -68,7 +68,7 @@ doc_avail = ''
 # default route
 @app.route('/')
 def index():
-    return 'Patient Management!'
+    return render_template('index.html')
 
 def fetchDoc():
     ref = db.reference('Doctors/Dermatology')
