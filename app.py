@@ -1,4 +1,4 @@
-from flask import Flask, request, make_response, jsonify
+from flask import Flask, request, make_response, jsonify, render_template
 # initialize the flask app
 app = Flask(__name__)
 import firebase_admin
