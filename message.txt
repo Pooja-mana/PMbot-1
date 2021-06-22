@@ -1,0 +1,14 @@
+DOWELL HEALTHCARE PATIENT REPORT 
+
+Date : 2021-06-22
+Doctor : Dr. Hariharan Muthuswamy
+PatientName : mana
+Time : 3:30 pm
+age : 32
+gender : female
+location : Chennai
+specialty : neurology
+
+dizziness : yesduration : 4.0 day
+history : no
+symptoms : ['slurred speech']
