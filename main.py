@@ -1,4 +1,5 @@
 from flask import Flask, request, make_response, jsonify, render_template
+from os import environ
 # initialize the flask app
 app = Flask(__name__)
 import firebase_admin
@@ -712,9 +713,7 @@ def webhook():
 
 # run the app
 if __name__ == '__main__':
-    
-   port = process.env.PORT or 3000;
-   app.run(host='0.0.0.0', port=port)
+   app.run(host='0.0.0.0', port=environ.get("PORT", 5000))
    
 
 
