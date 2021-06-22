@@ -63,9 +63,9 @@ def generate(id,specialty):
       for x in f:
         pdf.cell(200, 10, txt = x, ln = 1, align = 'C')
 
-      pdf.output("report.pdf")   
+      pdf.output("P_report.pdf")   
       ##### GENERAL, CARDIO, DERMO
-      #send.mail()
+      send.mail()
 
 
 
