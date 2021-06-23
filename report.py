@@ -41,7 +41,7 @@ def generate(id,specialty):
             f.write('Symptoms :')
             for i in a["symptoms"]: 
                   if (type(i) is dict)==True:
-                    f.write('\n%s: '% (i.key))
+                    f.write('\n%s: '% i.key())
                     for x,y in i.items():
                         f.write('%s' % (y))
                   
