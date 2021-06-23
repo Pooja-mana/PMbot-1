@@ -558,6 +558,7 @@ def results():  # build a request object
        location = req.get('queryResult').get('parameters').get('location')               ## Doctors list
        val = req.get('queryResult').get('parameters').get('specialty')
        specialty=val
+       symptoms.append("Not provided")
        return fix_appointment(val)
     
     elif (action=='fix.appointment') or (action=='date_error'):             ## Fix appointment
