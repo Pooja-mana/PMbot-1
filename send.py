@@ -20,7 +20,7 @@ def mail():
     # Add body to email
     message.attach(MIMEText(body, "plain"))
 
-    filename = "report.pdf"  # In same directory as script
+    filename = "P_report.pdf"  # In same directory as script
 
     # Open PDF file in binary mode
     with open(filename, "rb") as attachment:
