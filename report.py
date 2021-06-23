@@ -45,7 +45,7 @@ def generate(id,specialty):
                     for x,y in i.items():
                         f.write('\n%s : %s' % (x,y))
                   else:    
-                   f.write('\n%s %s : %s' % ('symptom ', count , i))
+                   f.write('\n%s %s : %s' % ('symptom', count , i))
                    count +=1
                 
       from fpdf import FPDF
