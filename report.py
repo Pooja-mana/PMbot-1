@@ -20,14 +20,14 @@ def generate(id,specialty):
         f.write('DOWELL HEALTHCARE PATIENT REPORT \n\n')
         for key, value in a.items(): 
             if key!='symptoms':
-              f.write('%s : %s\n' % (key, value))
+              f.write('\n%s : %s' % (key, value))
         for i in a["symptoms"]:    ### divide it
             print(i)
             for m,n in i.items():
               if m=='duration':
-                  f.write('\n%s :' % (m))
+                  f.write('\n%s : ' % (m))
                   for x,y in n.items():
-                    f.write('%s' % (y))
+                    f.write('%s ' % (y))
               else:
                 f.write('\n%s : %s' % (m,n))
                 print(m,n)
@@ -37,16 +37,16 @@ def generate(id,specialty):
             f.write('DOWELL HEALTHCARE PATIENT REPORT \n\n')
             for key, value in a.items(): 
               if key!='symptoms':
-               f.write('%s : %s\n' % (key, value))
+               f.write('\n%s : %s' % (key, value))
             f.write('Symptoms :')
             for i in a["symptoms"]: 
                   if (type(i) is dict)==True:
-                    f.write('\n %s: '% i.key)
+                    f.write('\n%s: '% i.key)
                     for x,y in i.items():
                         f.write('%s' % (y))
                   
                   else:
-                   f.write('%s \n' % (i))
+                   f.write('\n%s ' % (i))
               # print(key,value)  
               # f.write('%s : %s\n' % (key, value))
                 
