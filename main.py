@@ -631,8 +631,7 @@ def results():  # build a request object
     elif action=='FixAppointment-confirm-otp':
        print("Im in otp")
        num=req.get('queryResult').get('parameters').get('otp')
-       try:
-          if num==otp:
+       if num==otp:
               sqlconnect.book_appointment(int(id_num),specialty,mail_id)
               #ref = db.reference('Patients')
               ref = db.reference('Appointments/'+specialty)
@@ -660,7 +659,7 @@ def results():  # build a request object
                     "languageCode": "en"
                   }
                 } 
-       except:
+       else:
           print ("failed otp") 
           return {
             "fulfillmentMessages": [
