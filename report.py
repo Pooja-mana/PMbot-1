@@ -38,17 +38,15 @@ def generate(id,specialty):
             for key, value in a.items(): 
               if key!='symptoms':
                f.write('\n%s : %s' % (key, value))
-            f.write('Symptoms :')
+            count = 1
             for i in a["symptoms"]: 
                   if (type(i) is dict)==True:
-                    f.write('\n%s: '% i.key())
+                    #f.write('\n %s: '% i.key)
                     for x,y in i.items():
-                        f.write('%s' % (y))
-                  
-                  else:
-                   f.write('\n%s ' % (i))
-              # print(key,value)  
-              # f.write('%s : %s\n' % (key, value))
+                        f.write('\n%s : %s' % (x,y))
+                  else:    
+                   f.write('\n%s %s : %s' % ('symptom ', count , i))
+                   count +=1
                 
       from fpdf import FPDF
 
