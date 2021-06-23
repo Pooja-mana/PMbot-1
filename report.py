@@ -59,7 +59,7 @@ def generate(id,specialty):
       f = open("message.txt", "r")
 
       for x in f:
-        pdf.cell(200, 10, txt = x, ln = 1, align = 'C')
+        pdf.cell(200, 10, txt = x, ln = 1, align = 'L')
 
       pdf.output("P_report.pdf")   
       ##### GENERAL, CARDIO, DERMO
